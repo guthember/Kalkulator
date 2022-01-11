@@ -1,9 +1,24 @@
-function szamol() {
-    let szam1Szoveg = document.getElementById("szam1").value;
-    let szam2Szoveg = document.getElementById("szam2").value;
+function hello() {
+    let szam1 = document.getElementById("szam1Ertek").value;
+    let szam2 = document.getElementById("szam2Ertek").value;
+    let muv = document.getElementById("muvelet").value;
 
-    console.log(`Első szám: ${szam1Szoveg}`);
-    console.log(`Második szám: ${szam2Szoveg}`);
+    let x = parseInt(szam1);
+    let y = parseInt(szam2);
+    let eredmeny = 0;
+
+    if (muv === "osszead") {
+        eredmeny = x + y;
+    } else if (muv === "kivon") {
+        eredmeny = x - y;
+    } else if (muv === "oszt") {
+        eredmeny = x / y;
+    } else if (muv === "szoroz") {
+        eredmeny = x * y;
+    }
+
+
+    console.log(eredmeny);
+
 }
 
-document.getElementById("szam1").focus();
