@@ -7,23 +7,30 @@
     <title>Számológép</title>
 </head>
 <body>
-    <form>
-        <span id="elsoSzoveg">Első szám: </span>
-        <input type="text" id="szam1Ertek">
-        <br>
-        Második szám:
-        <input type="text" id="szam2Ertek">
-        <br>
-        <select id="muvelet">
-            <option value="osszead">+</option>
-            <option value="kivon">-</option>
-            <option value="oszt">/</option>
-            <option value="szoroz">*</option>
-        </select>
-        
-        <button type="button" onclick="hello()">Számol</button>
-    </form>
 
+    <p>
+        Első szám:<br>
+        <input type="text" id="szam1Ertek">
+    </p>
+
+    <p>
+        Második szám:<br>
+        <input type="text" id="szam2Ertek">
+    </p>
+
+    <select id="muvelet">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+    </select>
+    
+    <button type="button" onclick="hello()">Számol</button>
+
+
+    <p>
+        <span id="kiiras"></span>
+    </p>
 
     <script src="/js/scripts.js"></script>
 </body>
